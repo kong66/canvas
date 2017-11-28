@@ -1,0 +1,13 @@
+body {
+    background: #eee;
+	display:flex;	
+	justify-content: center;
+	align-items:center;
+}
+
+        
+#canvas {
+	margin:20px;
+    background: #fff;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+}
