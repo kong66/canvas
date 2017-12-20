@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Rubber line</title>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+  </head>
+
+   <body>
+		<canvas id='canvas' width='600' height='400'>
+		 Canvas not supported
+		</canvas>
+
+		<div id='controls'>
+		   Stroke color: <select id='strokeStyleSelect'>
+							<option value='red'>red</option>
+							<option value='green'>green</option>
+							<option value='blue'>blue</option>
+							<option value='orange'>orange</option>
+							<option value='cornflowerblue' selected>cornflowerblue</option>
+							<option value='goldenrod'>goldenrod</option>
+							<option value='navy'>navy</option>
+							<option value='purple'>purple</option>
+						 </select>
+		   Guidewires: <input id='guidewireCheckbox' type='checkbox' checked/>
+		   <input id='eraseAllButton' type='button' value='Erase all'/>
+		</div>
+    
+    <script src = 'think.js'></script>
+  </body>
+</html>

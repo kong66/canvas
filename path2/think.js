@@ -4,16 +4,11 @@ var context = document.getElementById('canvas').getContext('2d'),
     COUNTER_CLOCKWISE = 2;
 
 
-function drawTwoArcs(sameDirection) {
+function drawTwoArcs() {
    context.beginPath();
-   context.arc(300, 170, 150, 0, Math.PI*2, false); // outer: CW
-   context.arc(300, 170, 100, 0, Math.PI*2, !sameDirection); // innner
-
+   context.arc(300, 170, 150, 0, Math.PI*2, true); // outer: CW
+   context.arc(300, 170, 100, 0, Math.PI*2, false); // innner
    context.fill();
-   context.shadowColor = undefined;
-   context.shadowOffsetX = 0;
-   context.shadowOffsetY = 0;
-   //context.stroke();
 }
 
 function draw(sameDirection) {
@@ -36,13 +31,5 @@ function draw(sameDirection) {
 context.fillStyle = 'rgba(100, 140, 230, 0.5)';
 context.strokeStyle = 'red';
 
-draw(false);
-/*
-context.beginPath();
-context.rect(10,10,100,100);
-context.stroke();
+draw();
 
-context.beginPath();
-context.rect(50,50,100,100);
-context.stroke();
-*/

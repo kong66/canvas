@@ -1,0 +1,17 @@
+body {
+	background: #eee;
+}
+
+#controls {
+	position: absolute;
+	left: 25px;
+	top: 25px;
+}
+
+#canvas {
+	background: #fff;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-top: 10px;
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+}
